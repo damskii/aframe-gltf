@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>aframe - gltf import</title>
-    <meta name="description" content="glTF Model - A-Frame School">
+    <title>aframe 360 - QCA3642 - Griffith Uni</title>
+    <meta name="description" content="aframe GLTF - QCA3642 - Griffith Uni">
     <script src="https://rawgit.com/aframevr/aframe/b395ea0/dist/aframe-master.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js"></script>
   </head>
   <body>
     <a-scene>
+
       <a-assets>
-        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf"></a-asset-item>
+
+          <!--    -->
+        <a-asset-item id="vueModel" src="./asset/vue_test_export_maya.gltf"></a-asset-item>
+
+
       </a-assets>
 
-      <a-gltf-model src="#cityModel" animation-mixer></a-gltf-model>
+        <!-- <a-gltf-model src="#cityModel" animation-mixer></a-gltf-model> -->
+        <a-gltf-model src="#vueModel" animation-mixer></a-gltf-model>
+
+      <!--
+          1. select the assets folder and drag your image into the browser
+          2.  click on the image and select 'copy'
+          3.  uncomment the below <a-sky> line by removing the <!-- & -->
+     <!--
+          4. paste the copied URL into the src="" quotes - eg src="https://cdn.glitch.com/myimg.jpg"
+          5. delete the <a-sky> line above
+-->
+
+      <!--  <a-gltf-model src="#cityModel" animation-mixer></a-gltf-model> -->
+
+
+
     </a-scene>
   </body>
 </html>
